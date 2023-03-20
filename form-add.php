@@ -28,6 +28,8 @@ require 'init.php';
             <label for="avaliação">Avaliação:  </label>
             <input type="text" class="form-control col-sim" name="avaliacao" id="avaliacao" style="width:25%;" placeholder="Informe a avaliação">
         </div>
+        <input type="hidden" name="id" value="<?php echo $id ?>">
+        <button type="submit" class="btn btn-primary">Alterar</button>
         </form>
     </div>
     </body>

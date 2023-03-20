@@ -11,7 +11,7 @@ if (empty($descricao) || empty($desdequando) || empty($avaliacao))
 }
 
 $PDO = db_connect();
-$sql = "INSERT INTO users(descricao, desdequando, avaliacao) VALUES (:descricao, :desdeuqando, :avaliacao)";
+$sql = "INSERT INTO users(descricao, desdequando, avaliacao) VALUES (:descricao, :desdequando, :avaliacao)";
 $stmt = $PDO->prepare($sql);
 $stmt -> bindParam(':descricao', $descricao);
 $stmt -> bindParam(':desdequando', $desdequando);
