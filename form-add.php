@@ -11,25 +11,32 @@ require 'init.php';
         <script src="bootstrap/js/b0otstrap.js"></script>
     </head>
     <body>
-    <div class="container">
+    <div class="container jumbotron mt-3">
         <h1>Sistema de Cadastro</h1>
         <h2>Cadastro de Hobby</h2>
 
         <form action="add.php" method="post">
-        <div class="form-group">
-            <label for="descricao">Descrição:  </label>
-            <input type="text" class="form-control col-sim" name="descricao" id="descricao" style="width:25%;" placeholder="Informe o Hobby">
-        </div>
-        <div class="form-group">
-            <label for="desdequando">Desde quando?:  </label>
-            <input type="text" class="form-control col-sim" name="desdequando" id="desdequando" style="width:25%;" placeholder="Desde quando:">
-        </div>
-        <div class="form-group">
-            <label for="avaliação">Avaliação:  </label>
-            <input type="text" class="form-control col-sim" name="avaliacao" id="avaliacao" style="width:25%;" placeholder="Informe a avaliação">
-        </div>
-        <input type="hidden" name="id" value="<?php echo $id ?>">
-        <button type="submit" class="btn btn-primary">Alterar</button>
+        <div class="col-6">
+              <label for="descricao" class="form-label">Descrição</label>
+              <input type="text" class="form-control" id="descricao" placeholder="Descrição do hobby" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="desdequando" class="form-label">Desde quando</label>
+              <input type="text" class="form-control" id="desdequando" placeholder="Ano que começou" value="" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="avaliacao" class="form-label">Avaliação</label>
+              <input type="text" class="form-control" id="avaliacao" placeholder="De 0 a 10" value="" required>
+              <div class="invalid-feedback">
+              </div>
+            </div>
+            <br>
+        <input type="hidden" name="id" value="<?php echo $id ?>"> 
+        <button class="w-25 btn btn-primary btn-lg" type="submit">ENVIAR</button>
         </form>
     </div>
     </body>

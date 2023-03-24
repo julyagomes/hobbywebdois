@@ -25,7 +25,7 @@ if (!is_array($user))
 <html>
     <head>
         <meta charset ="utf-8">
-        <title>Edição de Hpbby</title>
+        <title>Edição de Hobby</title>
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
         <script src="bootstrap/js/bootstrap.js"></script>
         <script src="bootstrap/js/bootstrap.js"></script>

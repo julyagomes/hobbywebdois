@@ -14,55 +14,27 @@ $stmt ->execute();
     <head>
         <meta charset="utf-8">
         <title>Sistema de Cadastro de Hobbys</title>
-        <link href="bootsrap/css/boostrap.css" rel="stylesheet">
-        <script src="bootstrap/js/bootstrap.js"></script>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script src="bootstrap/js/b0otstrap.js"></script>
         <style type="text/css">
             .container{
-                margin-top: 50px;
-                margin-left: 100px;
+                margin-top: 100px;
+                margin-left: 250px;
             }
         </style>
         </head>
         <body>
-            <div class="container">
+            <div class="container jumbotron mt-10  ">
                 <h1>Sistema de Cadastro de Hobby</h1>  
-                <p><a href="form-add.php">Inserir os dados de um hobby</a></p>
-                <h2>Lista de Hobbys</h2>
-                <p>Total de hobbys: <?php echo $total ?></p>
-                <?php if ($total > 0): ?>
-                    <table class="table table-striped" width="50%" border="1">
-                        <thead>
-                            <tr>
-                                <th>Descrição</th>
-                                <th>Desde quando?</th>
-                                <th>Avaliação</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php while ($user = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
-                               
-                            <tr>
-                                <td><?php echo $user['descricao'] ?></td>
-                                <td><?php echo $user['desdequando'] ?></td>
-                                <td><?php echo $user['avaliacao'] ?></td>
-                             
-                                <td>
-                                    <a href="form-edit.php?id=<? echo $user['id'] ?>">Editar</a>
-                                    <a href="delete.php?id=<?php echo $user['id'] ?>" onclick="return confirm('Tem certeza que deseja remover?');">Remover</a>
-
-                                </td>
-                            </tr>
-                            <?php endwhile; ?>
-                        </tbody>
-                    </table>
-                    <?php else: ?>
-                    <p>Nenhum hobby registrado</p>
-                    <?php endif; ?>
-                    </div>
+                <p class="lead">Cadastre seu Hobby:</p>
+                <a class="w-10 btn btn-primary btn-lg" href="form-add.php" role="button">Inserir &raquo;</a> 
+                <br>
+                <p class="lead">Para exibir hobbies cadastrados:</p>
+                <a class="w-10 btn btn-primary btn-lg" href="exibir.php" role="button">Listagem &raquo;</a>
                 </body>
             </html>
 
-
+            
 
 
 
