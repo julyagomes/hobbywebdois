@@ -18,19 +18,19 @@ require 'init.php';
         <form action="add.php" method="post">
         <div class="col-6">
               <label for="descricao" class="form-label">Descrição</label>
-              <input type="text" class="form-control" id="descricao" placeholder="Descrição do hobby" required>
+              <input type="text" class="form-control" name="descricao" id="descricao" placeholder="Descrição do hobby" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <div class="col-sm-6">
               <label for="desdequando" class="form-label">Desde quando</label>
-              <input type="text" class="form-control" id="desdequando" placeholder="Ano que começou" value="" required>
+              <input type="text" class="form-control" name="desdequando" id="desdequando" placeholder="Ano que começou" value="" required>
               <div class="invalid-feedback">
               </div>
             </div>
             <div class="col-sm-6">
               <label for="avaliacao" class="form-label">Avaliação</label>
-              <input type="text" class="form-control" id="avaliacao" placeholder="De 0 a 10" value="" required>
+              <input type="text" class="form-control" name="avaliacao" id="avaliacao" placeholder="De 0 a 10" value="" required>
               <div class="invalid-feedback">
               </div>
             </div>

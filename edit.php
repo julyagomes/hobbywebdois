@@ -1,9 +1,9 @@
 <?php
 require_once 'init.php';
-$descricao = issert($_POST['descricao']) ? $_POST['name'] : null;
-$desdequando = issert($_POST['desdequando']) ? $_POST['desdequando'] : null;
-$avaliacao = issert($_POST['avaliacao']) ? $_POST['avaliacao'] : null;
-$id = issert($_POST['id']) ? $_POST['id'] : null;
+$descricao = isset($_POST['descricao']) ? $_POST['name'] : null;
+$desdequando = isset($_POST['desdequando']) ? $_POST['desdequando'] : null;
+$avaliacao = isset($_POST['avaliacao']) ? $_POST['avaliacao'] : null;
+$id = isset($_POST['id']) ? $_POST['id'] : null;
 
 if (empty($descricao) || empty($desdequando) || empty($avaliacao))
 {
