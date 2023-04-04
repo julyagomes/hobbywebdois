@@ -49,8 +49,8 @@ $stmt ->execute();
                                 <td><?php echo $user['avaliacao'] ?></td>
                              
                                 <td>
-                                    <a href="form-edit.php?id=<? echo $user['id'] ?>">Editar</a>
-                                    <a href="delete.php?id=<?php echo $user['id'] ?>" onclick="return confirm('Tem certeza que deseja remover?');">Remover</a>
+                                    <a class="btn btn-outline-primary" href="delete.php?id=<?php echo $user['id'] ?>" onclick="return confirm('Tem certeza que deseja editar?');">Editar</a>
+                                    <a class="btn btn-outline-danger" href="delete.php?id=<?php echo $user['id'] ?>" onclick="return confirm('Tem certeza que deseja remover?');">Remover</a>
 
                                 </td>
                             </tr>
