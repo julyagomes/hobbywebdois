@@ -27,11 +27,20 @@ if (!is_array($user))
         <meta charset ="utf-8">
         <title>Edição de Hobby</title>
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <script src="bootstrap/js/bootstrap.js"></script>
-        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src ="bootstrap/js/popper.min.js"></script>
+        <script src ="bootstrap/js/bootstrap.js"></script>
+        <script src ="bootstrap/js/jquery.min.js"></script>
+        <script type ="text/javascript">
+          $(document).ready(function() {
+          $(function(){
+          $("#menu").load("navbar.html");
+          }) ;
+          }) ;
+ </script>
     </head>
     <body>
-    <div class="container">
+    <div id ="menu"></div >
+    <div class="container jumbotron mt-3">
         <h1>Sistema de cadastro</h1>
         <h2>Edição de Hobby</h2>
         <form action="edit.php" method ="post">

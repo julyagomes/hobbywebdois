@@ -16,16 +16,20 @@ $stmt ->execute();
         <title>Hobbies</title>
 
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <style type="text/css">
-        .container{
-            margin-top: 50px;
-            margin-left; 100px;
-        }
-    </style>
+    <script src ="bootstrap/js/popper.min.js"></script>
+        <script src ="bootstrap/js/bootstrap.js"></script>
+        <script src ="bootstrap/js/jquery.min.js"></script>
+        <script type ="text/javascript">
+          $(document).ready(function() {
+          $(function(){
+          $("#menu").load("navbar.html");
+          }) ;
+          }) ;
+ </script>
     </head>
-
     <body>
+    <div id ="menu"></div >
+    <div class="container jumbotron mt-3">
         <div class="container">
             <h1>Listagem dos Hobbies</h1>
             <h2>Lista de Hobby</h2>

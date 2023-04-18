@@ -8,9 +8,19 @@ require 'init.php';
         <meta charset="utf-8">
         <title>Cadastro de Hobby</title>
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <script src="bootstrap/js/b0otstrap.js"></script>
+        <script src ="bootstrap/js/popper.min.js"></script>
+        <script src ="bootstrap/js/bootstrap.js"></script>
+        <script src ="bootstrap/js/jquery.min.js"></script>
+        <script type ="text/javascript">
+          $(document).ready(function() {
+          $(function(){
+          $("#menu").load("navbar.html");
+          }) ;
+          }) ;
+ </script>
     </head>
     <body>
+    <div id ="menu"></div >
     <div class="container jumbotron mt-3">
         <h1>Sistema de Cadastro</h1>
         <h2>Cadastro de Hobby</h2>
