@@ -11,9 +11,9 @@ if (empty($id))
 $PDO = db_connect();
 $sql = "SELECT descricao, desdequando, avaliacao FROM users WHERE id = :id";
 $stmt = $PDO->prepare($sql);
-$stm->bindParam('id', $id, PDO::PARAM_INT);
-$stm->execute();
-$user = $stm->fetch(PDO::FETCH_ASSOC);
+$stmt->bindParam('id', $id, PDO::PARAM_INT);
+$stmt->execute();
+$user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if (!is_array($user))
 {
