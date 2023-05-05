@@ -27,4 +27,12 @@ if ($stmt ->execute())
     echo "Erro ao alterar";
     print_r($stmt->errorInfo());
 }
+if ($stmt->execute())
+    {
+        header('Location: sucesso.html');
+    }
+    else
+    {
+        header('Location: erro.html');
+    }
 ?>
